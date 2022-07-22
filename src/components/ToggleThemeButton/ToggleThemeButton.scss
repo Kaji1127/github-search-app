@@ -1,0 +1,28 @@
+.theme-button {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: var(--text-color);
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	cursor: pointer;
+	transition: color 0.4s;
+
+	span {
+		letter-spacing: 2.5px;
+	}
+
+	svg {
+		fill: var(--text-color);
+		transition: fill 0.4s;
+	}
+
+	&:hover {
+		color: var(--heading-color);
+
+		svg {
+			fill: var(--heading-color);
+		}
+	}
+}

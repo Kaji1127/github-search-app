@@ -1,0 +1,38 @@
+.search-form {
+	background-color: var(--bg-element);
+	display: grid;
+	grid-template-columns: 2.4rem 1fr auto;
+	padding: 0.65rem 0.7rem 0.75rem 1.6rem;
+	border-radius: 1.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1.6rem;
+
+	@media screen and (min-width: 48em) {
+		padding: 0.95rem 1rem 0.95rem 3.2rem;
+		margin-bottom: 2.4rem;
+	}
+
+	svg {
+		align-self: center;
+	}
+
+	input {
+		border: none;
+		outline: none;
+		font-size: 1.3rem;
+		margin-right: 0.7rem;
+		margin-left: 0.5rem;
+		align-self: center;
+		color: var(--title-color);
+		caret-color: var(--blue);
+
+		@media screen and (min-width: 48em) {
+			font-size: 1.8rem;
+			margin-left: 2.4rem;
+		}
+
+		&::placeholder {
+			color: var(--text-color);
+		}
+	}
+}

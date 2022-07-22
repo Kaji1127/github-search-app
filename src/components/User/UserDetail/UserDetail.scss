@@ -1,0 +1,51 @@
+.user-detail {
+	display: grid;
+	gap: 1.6rem;
+
+	@media screen and (min-width: 48em) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.9rem;
+		grid-column: 1 / 3;
+	}
+
+	@media screen and (min-width: 64em) {
+		grid-column: 2 / 3;
+	}
+
+	&__inner {
+		display: grid;
+		grid-template-columns: 2rem 1fr;
+		align-items: center;
+		gap: 1.3rem;
+
+		svg {
+			fill: var(--text-color);
+		}
+
+		p {
+			font-size: 1.3rem;
+			color: var(--text-color);
+
+			@media screen and (min-width: 48em) {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	&__twitter {
+		@media screen and (min-width: 48em) {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+	}
+
+	& .not-available {
+		svg {
+			fill: var(--not-available-color);
+		}
+
+		p {
+			color: var(--not-available-color);
+		}
+	}
+}

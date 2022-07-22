@@ -1,0 +1,23 @@
+.search-button {
+	width: 8.4rem;
+	justify-self: end;
+	background-color: var(--blue);
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 1.25rem 0;
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: background-color 0.4s;
+
+	&:hover {
+		background-color: var(--hover-blue);
+	}
+
+	@media screen and (min-width: 48em) {
+		width: 10.6rem;
+		font-size: 1.6rem;
+		padding-bottom: 1.35rem;
+	}
+}

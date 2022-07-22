@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Space Mono', monospace;
+}
+
+:root {
+	--blue: hsl(212, 100%, 50%);
+	--hover-blue: hsl(212, 100%, 69%);
+	--white: hsl(0, 0%, 100%);
+	--shadow: 0 1.6rem 3rem -1rem hsla(227, 46%, 51%, 0.1986);
+
+	--bg-blue: hsl(227, 100%, 98%);
+	--bg-element: hsl(0, 0%, 100%);
+	--title-color: hsl(220, 18%, 16%);
+	--heding-color: hsl(217, 21%, 21%);
+	--text-color: hsl(217, 35%, 45%);
+	--joined-color: hsl(217, 20%, 51%);
+	--not-available-color: hsl(217, 28%, 72%);
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
