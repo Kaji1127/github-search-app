@@ -11,9 +11,6 @@ const UserDetail = () => {
 
 	const { location, blog, company, twitter_username } = githubCtx;
 
-	const infoArr = [location, blog, twitter_username, company];
-	console.log(infoArr);
-
 	return (
 		<div className="user-detail">
 			<div className={`user-detail__inner ${!location && 'not-available'}`}>
