@@ -5,11 +5,13 @@ import './UserBio.scss';
 
 const UserBio = () => {
 	const githubCtx = useContext(GithubContext);
-	const { bio } = githubCtx;
+	const { githubDev } = githubCtx;
+	const { bio } = githubDev;
 
+	// console.log(typeof bio);
 	return (
 		<p className="biography">
-			{bio !== null ? { bio } : 'This profile has no bio.'}
+			{bio === null ? 'This profile has no bio.' : bio}
 		</p>
 	);
 };

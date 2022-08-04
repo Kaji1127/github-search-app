@@ -8,8 +8,8 @@ import './UserDetail.scss';
 
 const UserDetail = () => {
 	const githubCtx = useContext(GithubContext);
-
-	const { location, blog, company, twitter_username } = githubCtx;
+	const { githubDev } = githubCtx;
+	const { location, blog, company, twitter_username } = githubDev;
 
 	return (
 		<div className="user-detail">

@@ -5,8 +5,9 @@ import './UserStatus.scss';
 
 const UserStatus = () => {
 	const githubCtx = useContext(GithubContext);
+	const { githubDev } = githubCtx;
+	const { public_repos, following, followers } = githubDev;
 
-	const { public_repos, following, followers } = githubCtx;
 	return (
 		<div className="status">
 			<div className="status__content">

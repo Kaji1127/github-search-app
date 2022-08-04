@@ -4,7 +4,8 @@ import './UserBasicInfo.scss';
 
 const UserBasicInfo = () => {
 	const githubCtx = useContext(GithubContext);
-	const { name, login, html_url, created_at } = githubCtx;
+	const { githubDev } = githubCtx;
+	const { name, login, html_url, created_at } = githubDev;
 
 	const date = new Date(created_at);
 	const joinedDate = date.toLocaleString('en-GB', {

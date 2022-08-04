@@ -4,7 +4,9 @@ import './UserAvatar.scss';
 
 const UserAvatar = () => {
 	const githubCtx = useContext(GithubContext);
-	const { avatar_url, name } = githubCtx;
+	const { githubDev } = githubCtx;
+	const { avatar_url, name } = githubDev;
+
 	return <img src={avatar_url} alt={name} />;
 };
 
