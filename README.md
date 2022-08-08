@@ -36,8 +36,8 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [リンク](https://your-solution-url.com)
-- Live Site URL: [リンク](https://your-live-site-url.com)
+- Solution URL: [リンク](https://github.com/Kaji1127/github-search-app)
+- Live Site URL: [リンク](https://react-github-user-search-application.netlify.app/)
 
 ## My process
 
