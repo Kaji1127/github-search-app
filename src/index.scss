@@ -15,13 +15,29 @@ body {
 	--shadow: 0 1.6rem 3rem -1rem hsla(227, 46%, 51%, 0.1986);
 	--error: hsl(0, 91%, 62%);
 
-	--bg-blue: hsl(227, 100%, 98%);
-	--bg-element: hsl(0, 0%, 100%);
-	--title-color: hsl(220, 18%, 16%);
-	--heding-color: hsl(217, 21%, 21%);
-	--text-color: hsl(217, 35%, 45%);
-	--joined-color: hsl(217, 20%, 51%);
-	--not-available-color: hsl(217, 28%, 72%);
+	&.light-theme {
+		--bg-blue: hsl(227, 100%, 98%);
+		--bg-element: hsl(0, 0%, 100%);
+		--title-color: hsl(220, 18%, 16%);
+		--heading-color: hsl(217, 21%, 21%);
+		--text-color: hsl(217, 35%, 45%);
+		--joined-color: hsl(217, 20%, 51%);
+		--not-available-color: hsl(217, 28%, 72%);
+		--hover-button-color: hsl(217, 21%, 21%);
+		--shadow: 0 1.6rem 3rem -1rem hsla(227, 46%, 51%, 0.1986);
+	}
+
+	&.dark-theme {
+		--bg-blue: hsl(220, 41%, 13%);
+		--bg-element: hsl(222, 41%, 20%);
+		--title-color: hsl(0, 0%, 100%);
+		--heading-color: hsl(0, 0%, 100%);
+		--text-color: hsl(0, 0%, 100%);
+		--joined-color: hsl(0, 0%, 100%);
+		--not-available-color: hsl(223, 10%, 60%);
+		--hover-button-color: hsl(217, 35%, 45%);
+		--shadow: none;
+	}
 }
 
 button {

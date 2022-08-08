@@ -12,8 +12,6 @@ const User = () => {
 	const githubCtx = useContext(GithubContext);
 	const { isLoading } = githubCtx;
 
-	console.log(isLoading);
-
 	if (isLoading) {
 		return (
 			<section className={`user ${isLoading && 'loading-wrapper'}`}>

@@ -19,10 +19,10 @@
 	}
 
 	&:hover {
-		color: var(--heading-color);
+		color: var(--hover-button-color);
 
 		svg {
-			fill: var(--heading-color);
+			fill: var(--hover-button-color);
 		}
 	}
 }

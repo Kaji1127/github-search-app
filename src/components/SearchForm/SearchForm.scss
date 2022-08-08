@@ -42,6 +42,7 @@
 		align-self: center;
 		color: var(--title-color);
 		caret-color: var(--blue);
+		background-color: transparent;
 
 		@media screen and (min-width: 48em) {
 			font-size: 1.8rem;
